@@ -30,7 +30,7 @@ def convert_to_excel(df):
 data = load_data(file_path)
 
 if data is not None:
-    st.title("Base del Quiz")
+    st.title("Base de datos para el Quizz 2")
 
     # Crear lista de grupos únicos con "Selecciona un grupo" como primera opción
     grupos = ["Selecciona un grupo"] + sorted(data['Grupo'].dropna().unique().tolist())
