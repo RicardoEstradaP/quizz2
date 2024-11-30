@@ -36,7 +36,7 @@ if data is not None:
     grupos = ["Selecciona un grupo"] + sorted(data['Grupo'].dropna().unique().tolist())
 
     # Selector de grupo
-    selected_group = st.selectbox("Grupo:", grupos)
+    selected_group = st.selectbox("Selecciona tu grupo:", grupos)
 
     # Verifica que se haya seleccionado un grupo válido
     if selected_group != "Selecciona un grupo":
