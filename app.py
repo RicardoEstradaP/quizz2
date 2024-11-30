@@ -3,7 +3,7 @@ import pandas as pd
 from io import BytesIO
 
 # Ruta del archivo
-file_path = "/Users/ricardoestrada/Desktop/base_examen.xlsx"
+file_path = "base_examen.xlsx"
 
 # Carga de datos
 @st.cache_data
