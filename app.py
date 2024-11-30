@@ -2,14 +2,14 @@ import streamlit as st
 import pandas as pd
 from io import BytesIO
 
-# Ruta del archivo
-file_path = "base_examen.csv"
+# Ruta del archivo CSV
+file_path = "/Users/ricardoestrada/Desktop/base_examen.csv"
 
 # Carga de datos
 @st.cache_data
 def load_data(path):
     try:
-        return pd.read_excel(path)
+        return pd.read_csv(path)
     except FileNotFoundError:
         st.error("No se encontró el archivo en la ruta: " + path)
         return None
